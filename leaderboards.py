@@ -39,7 +39,7 @@ def get_leaderboard(dash, offset=None):
             'offset': offset,
             'count': None
         }
-    })
+    }, timeout=10)
 
     return response.json()
 

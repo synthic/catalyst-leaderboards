@@ -6,6 +6,7 @@ Record times are stored in hundredths of a second. Filenames are based on the lo
 
 If you want to scrape the data yourself, just run the included Python script.
 
+
 | Dash                    | ID               |
 |-------------------------|------------------|
 | Caleb's Run             | ch_rrt_tv2_time  |
