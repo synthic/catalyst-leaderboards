@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 
 import requests
+from tenacity import retry, wait_exponential
 
 platforms = ['pc', 'ps4', 'xboxone']
 
@@ -30,6 +31,7 @@ dashes = [
     'ch_rrt_rz1_time'
 ]
 
+@retry(wait=wait_exponential(multiplier=1, max=60))
 def get_leaderboard(dash, offset=None):
     response = requests.post(api, json={
         'jsonrpc': '2.0',

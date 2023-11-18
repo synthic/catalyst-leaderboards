@@ -1,11 +1,9 @@
 # Mirror's Edge Catalyst Leaderboards
 
-This repo contains the entire leaderboards for all 22 dashes from Mirror's Edge Catalyst in json format.
+This repo contains a Python script to download the complete Dash leaderboards from Mirror's Edge Catalyst in json format.
 
-Record times are stored in hundredths of a second. Filenames are based on the location of the dash in the overworld, and can be referenced in the table below.
-
-If you want to scrape the data yourself, just run the included Python script.
-
+Record times are stored in hundredths of a second. Filenames are based on the location of each Dash in the overworld, and can be referenced in the table below.
+<br><br>
 
 | Dash                    | ID               |
 |-------------------------|------------------|
