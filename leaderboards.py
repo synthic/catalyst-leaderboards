@@ -1,3 +1,4 @@
+import gzip
 import json
 from pathlib import Path
 
@@ -73,5 +74,5 @@ for platform in platforms:
         p = (Path(__file__).parent).joinpath('leaderboards', platform)
         p.mkdir(parents=True, exist_ok=True)
 
-        with open(p.joinpath(dash + '.json'), 'w', encoding='utf-8', newline='\n') as f:
+        with gzip.open(p.joinpath(dash + '.json.gz'), 'wt', encoding='utf-8', newline='\n') as f:
             json.dump(result, f, indent=4)
